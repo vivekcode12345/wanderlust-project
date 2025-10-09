@@ -2,6 +2,7 @@ require('dotenv').config();
 if(process.env.SECRET){
     require('dotenv').config();
 }
+const PORT = process.env.PORT || 8080;
 const express= require('express');
 const app= express();
 const mongoose=require("mongoose");
@@ -97,12 +98,18 @@ app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
+
 app.use((err, req, res, next) => {
     let { statusCode=500,message="something went wrong"}=err;
     res.status(statusCode).render("error.ejs",{message});
     //res.status(statusCode).send(message);
 });
 
-app.listen(8080,()=>{
-    console.log("server is running on port 8080");
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
