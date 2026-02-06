@@ -19,12 +19,8 @@
      <p class="card-text"> &#8377; <%=listing.price%> / night</p>
      <p class="card-text"><%= listing.location %></p>
      <p class="card-text"><%= listing.country %></p>
-    <br>
   </div>
 </div>
-
-<br />
-
     <% if(currentUser && listing.owner._id.equals(currentUser._id)) { %>
     <div class="btns">
       <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark col-1 offset-3 edit-btn">Edit</a>
