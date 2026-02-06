@@ -14,95 +14,72 @@ This project demonstrates my understanding of **backend development, database de
 ---
 
 ## 📸 Screenshots
-- Home Page
-- Listings Page
-- Add New Listing
-- Login / Signup
-- Listing Details with Reviews
 
+- Home Page  
+- Listings Page  
+- Add New Listing  
+- Login / Signup  
+- Listing Details with Reviews  
 
-📷 Screenshots will be added here
-
-✨ Features
-👤 User Features
-
-  User Signup & Login (Authentication)
-  
-  Secure Sessions
-  
-  Create, Edit & Delete Listings
-  
-  Add Reviews to Listings
-  
-  View All Travel Destinations
----
-
-🏠 Listing Features
-
-Add travel property with:
-
-  Title
-  
-  Description
-  
-  Price
-  
-  Location
-  
-  Image Upload
-  
-  View listing details
-  
-  Authorization (only owner can edit/delete)
+📷 *Screenshots will be added here*
 
 ---
 
-🔐 Security & Validation
+## ✨ Features
 
-Server-side form validation
+### 👤 User Features
+- User Signup & Login (Authentication)
+- Secure Sessions
+- Create, Edit & Delete Listings
+- Add Reviews to Listings
+- View All Travel Destinations
 
-Authentication & Authorization middleware
-
-Protected routes
 ---
 
-🛠 Tech Stack
-Frontend
+### 🏠 Listing Features
+Users can add travel properties with:
+- Title
+- Description
+- Price
+- Location
+- Image Upload
 
-HTML
+Additional functionality:
+- View listing details
+- Authorization (only owner can edit/delete listings)
 
-CSS
-
-JavaScript
-
-EJS (Template Engine)
-
-Backend
 ---
 
-Node.js
+### 🔐 Security & Validation
+- Server-side form validation
+- Authentication & Authorization middleware
+- Protected routes
 
-Express.js
 ---
 
-Database
+## 🛠 Tech Stack
 
-MongoDB
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- EJS (Template Engine)
 
-Mongoose
----
+### Backend
+- Node.js
+- Express.js
 
-Other Tools & Libraries
+### Database
+- MongoDB
+- Mongoose
 
-Cloudinary (Image Uploads)
+### Other Tools & Libraries
+- Cloudinary (Image Uploads)
+- Multer (File Handling)
+- Express-Session
+- Passport.js (Authentication)
+- MVC Architecture
 
-Multer (File Handling)
-
-Express-Session
-
-Passport.js (Authentication)
-
-MVC Architecture
 ---
 
 📂 Project Structure
